@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my first blood</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .heading {
+            font-size: 2.5vw;
+            /* 视口宽度单位 */
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 20px;
+            font-size: 200%;
+        }
+
+        .paragraph {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .one {
+            display: flex;
+            align-items: center;
+            /* border: 1px solid #ccc; */
+            padding: 10px;
+        }
+
+        .left {
+            margin-left: 10px;
+        }
+
+        .a1 {
+            display: block;
+            text-align: center;
+        }
+
+        a img {
+            width: 100%;
+            /* 自适应容器宽度 */
+            max-width: 600px;
+            /* 限制最大宽度 */
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border: 2px solid #000;
+            border-radius: 10px;
+            opacity: 0.8;
+        }
+
+        /* 为列表项添加右侧外边距 */
+        .one li {
+            margin-right: 15px;
+        }
+
+        /* 去除最后一个列表项的右侧外边距 */
+        .one li:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width: 600px) {
+            .heading {
+                font-size: 4vw;
+            }
+
+            .paragraph {
+                font-size: 3.5vw;
+            }
+
+            .one {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .one li {
+                margin: 15px 0;
+            }
+        }
+    </style>
+    <script>
+        function handleLogin(targetUrl) {
+            sessionStorage.setItem('targetUrl', targetUrl);
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="heading">welcome you！my master</h1>
+    <p class="paragraph">you are the best</p>
+    <a class="a1" href="https://zpepper.github.io/birthday/">
+        <img src="E:\Web\歌词\4.jpg">
+    </a>
+    <p class="paragraph">当你满脑子里面想的都是如何挣钱的时候，那么你的青春已经结束了</p>
+    <p class="paragraph">When all that occupies your mind is how to make money, then your youth has come to an end</p>
+    <div class="one">
+        <li>
+            this is my music
+            <a href="javascript:void(0)" onclick="handleLogin('https://zpepper.github.io/mymusic/')">
+                <p class="left">mymusic</p>
+            </a>
+        </li>
+        <li>
+            many files are here
+            <a href="javascript:void(0)" onclick="handleLogin('#')">
+                <p class="left">myfile</p>
+            </a>
+        </li>
+        <li>
+            this is my diary
+            <a href="javascript:void(0)" onclick="handleLogin('https://zpepper.github.io/myblog/')">
+                <p class="left">mydiary</p>
+            </a>
+        </li>
+        <li>
+            this is my photo
+            <a href="javascript:void(0)" onclick="handleLogin('https://zpepper.github.io/myphoto/')">
+                <p class="left">myphoto</p>
+            </a>
+        </li>
+        <li>
+            this is my video
+            <a href="javascript:void(0)" onclick="handleLogin('E:/Web/maybe/myvideo.txt')">
+                <p class="left">myvideo</p>
+            </a>
+        </li>
+        <li>
+            this is my game
+            <a href="javascript:void(0)" onclick="handleLogin('https://zpepper.github.io/mygame/')">
+                <p class="left">mygame</p>
+            </a>
+        </li>
+        <li>
+            this is my book
+            <a href="javascript:void(0)" onclick="handleLogin('https://zpepper.github.io/mybook/')">
+                <p class="left">mybook</p>
+            </a>
+        </li>
+        <li>
+            this is my studentApp
+            <a href="javascript:void(0)" onclick="handleLogin('https://jwxt.sias.edu.cn/eams/homeExt.action')">
+                <p class="left">shuwei</p>
+            </a>
+    </div>
+    <p class="paragraph">无论何时，这是你最美的时光，你结实了你的爱人，做了这么多你喜爱的！</p>
+    <h1 class="heading">Thank you！The world is wonderful because of you</h1>
+</body>
+
+</html>    
